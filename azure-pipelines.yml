@@ -1,0 +1,30 @@
+name: $(Date:yyyyMMdd)$(Rev:.rr)
+
+# resources:
+#   repositories:
+#     - repository: templates
+#       type: github
+#       endpoint: DigitalInnovation
+#       name: DigitalInnovation/dta-ds-platform-scripts
+#       ref: debug_ci_trigger
+      
+pr:
+  - main
+  - mshiva1
+
+trigger:
+  # batch: true
+  branches:
+    include:
+      - main
+      - mshiva1
+      # - develop
+      # - feature/*
+      # - hotfix/*
+
+pool: # linux_lab
+  vmImage: "ubuntu-latest"
+
+steps:
+- bash: echo "how are you"
+- script: pwd & cd $(Build.SourcesDirectory) & ls
