@@ -10,7 +10,7 @@ name: $(Date:yyyyMMdd)$(Rev:.rr)
       
 pr:
   - main
-  - mshiva2
+  - mshiva3
 
 trigger:
   # batch: true
