@@ -27,4 +27,4 @@ pool: # linux_lab
 
 steps:
 - bash: echo "how are you"
-- script: pwd & cd $(Build.SourcesDirectory) & ls
+#- script: pwd & cd $(Build.SourcesDirectory) & ls
