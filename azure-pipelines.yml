@@ -10,14 +10,14 @@ name: $(Date:yyyyMMdd)$(Rev:.rr)
       
 pr:
   - main
-  - mshiva5
+  - mshiva6
 
 trigger:
   # batch: true
   branches:
     include:
       - main
-      - mshiva5
+      #- mshiva5
       # - develop
       # - feature/*
       # - hotfix/*
